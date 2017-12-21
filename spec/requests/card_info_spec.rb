@@ -15,7 +15,7 @@ RSpec.describe 'Card info', type: :request do
     end
   end
 
-  describe 'GET valid sberbank card' do
+  describe 'valid sberbank card' do
     before { get '/api/v1/card_info?card_number=401288888888188100' }
 
     it 'returns Card info' do
